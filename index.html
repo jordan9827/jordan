@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Database</title>
+  
+	<!-- jQuery Mobile Setup -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="libs/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script type="text/javascript" charset="utf-8" src="libs/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="libs/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<!-- PhoneGap Setup -->
+    <script type="text/javascript" charset="utf-8" src="libs/cordova-1.5.0.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" charset="utf-8" src="js/script.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="home"> 
+		<div data-role="header" data-position="fixed">
+			<h1>DigitalNoiz</h1>
+		</div> 
+		<div data-role="content">
+			<p>Database Table Example</p>
+			<div id="form">
+				<label for="id">ID:</label>
+				<input type="number" name="ID" id="ID" value="" />
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" value="" />
+				<fieldset data-role="controlgroup">
+					<legend>Gender:</legend>
+					<input type="radio" name="radio-choice-1" id="radio-choice-1" value="female"/>
+	     			<label for="radio-choice-1">Female</label>
+	     			<input type="radio" name="radio-choice-1" id="radio-choice-2" value="male"/>
+	     			<label for="radio-choice-2">Male</label>
+				</fieldset>
+				<label for="age">Age:</label>
+				<input type="number" name="age" id="age" value="" />
+				<a href="#" id="submit" data-role="button" data-theme="b">Submit</a>
+			</div>
+			<div id="display">
+				<ul data-role="listview" data-theme="d">
+					<li><p class="id">ID</p></li>
+					<li><p class="name">Name</p></li>
+					<li><p class="gender">Gender</p></li>
+					<li><p class="age">Age</p></li>
+				</ul>
+				</table>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
